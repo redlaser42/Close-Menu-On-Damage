@@ -1,13 +1,11 @@
 using EFT;
-using EFT.UI;
 using HarmonyLib;
 using SPT.Reflection.Patching;
 using System.Reflection;
-using CloseMenuOnDamage;
 
 namespace CloseMenuOnDamage.Patches
 {
-    internal class HealthControllerOnDamage_Patch : ModulePatch
+    internal class PlayerApplyDamageInfo_Patch : ModulePatch
     {
         protected override MethodBase GetTargetMethod()
         {
@@ -20,9 +18,10 @@ namespace CloseMenuOnDamage.Patches
             bool isBulletDamage = (damageInfo.DamageType == EDamageType.Bullet);
             if (isBulletDamage)
             {
-                if (InventoryScreenAwake_Patch.inventoryScreen != null && Plugin.Enabled.Value)
+                if (InventoryScreenAwake_Patch.inventoryScreen != null && __instance.IsYourPlayer && Plugin.Enabled.Value)
                 {
                     InventoryScreenAwake_Patch.inventoryScreen.method_8();
+                    Plugin.CloseBepInExConfig();
                 }
             }
         }
