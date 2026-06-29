@@ -3,6 +3,7 @@ using EFT.UI;
 using HarmonyLib;
 using SPT.Reflection.Patching;
 using System.Reflection;
+using CloseMenuOnDamage;
 
 namespace CloseMenuOnDamage.Patches
 {
@@ -19,7 +20,7 @@ namespace CloseMenuOnDamage.Patches
             bool isBulletDamage = (damageInfo.DamageType == EDamageType.Bullet);
             if (isBulletDamage)
             {
-                if (InventoryScreenAwake_Patch.inventoryScreen != null)
+                if (InventoryScreenAwake_Patch.inventoryScreen != null && Plugin.Enabled.Value)
                 {
                     InventoryScreenAwake_Patch.inventoryScreen.method_8();
                 }
