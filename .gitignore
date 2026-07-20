@@ -50,3 +50,22 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/.vs
+bin/Debug/netstandard2.1/Close Menu On Damage.deps.json
+obj/Close Menu On Damage.csproj.nuget.dgspec.json
+obj/Close Menu On Damage.csproj.nuget.g.props
+obj/Close Menu On Damage.csproj.nuget.g.targets
+obj/Debug/netstandard2.1/.NETStandard,Version=v2.1.AssemblyAttributes.cs
+obj/Debug/netstandard2.1/Close Me.35C2F997.Up2Date
+obj/Debug/netstandard2.1/Close Menu On Damage.AssemblyInfo.cs
+obj/Debug/netstandard2.1/Close Menu On Damage.AssemblyInfoInputs.cache
+obj/Debug/netstandard2.1/Close Menu On Damage.assets.cache
+obj/Debug/netstandard2.1/Close Menu On Damage.csproj.AssemblyReference.cache
+obj/Debug/netstandard2.1/Close Menu On Damage.csproj.CoreCompileInputs.cache
+obj/Debug/netstandard2.1/Close Menu On Damage.csproj.FileListAbsolute.txt
+obj/Debug/netstandard2.1/Close Menu On Damage.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/netstandard2.1/Close Menu On Damage.sourcelink.json
+obj/project.assets.json
+obj/project.nuget.cache
+/obj
+/bin
