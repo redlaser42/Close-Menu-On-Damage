@@ -8,7 +8,7 @@ using System.Reflection;
 
 namespace CloseMenuOnDamage
 {
-    [BepInPlugin("com.redlaser42.CloseMenuOnDamage", "CloseMenuOnDamage", "1.0.1")]
+    [BepInPlugin("com.redlaser42.CloseMenuOnDamage", "CloseMenuOnDamage", "1.0.3")]
     public class Plugin : BaseUnityPlugin
     {
         public static ConfigEntry<bool>? Enabled;
